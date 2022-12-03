@@ -1,0 +1,111 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-success">
+                        <h4 class="card-title ">Lista de Solicitudes</h4>
+                        <p class="card-category">Municipalidad de Chaclacayo</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <thead class=" text-primary">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Organizacióm Social
+                                    </th>
+                                    <th>
+                                        Tipo de Organización Social
+                                    </th>
+                                    <th>
+                                        Zona Local
+                                    </th>
+                                    <th>
+                                        Nivel OS    
+                                    </th>
+                                    <th>
+                                        Dirección
+                                    </th>
+                                   
+                                </thead>
+
+                                <tbody>
+
+                                    <tr *ngFor="let soli of solicitudes">
+                                       <td>{{soli.idsolicitudes}}</td>
+                                       <td>{{soli.nombreos}}</td>
+                                       <td>{{soli.nombre_presidente}}</td>
+                                       <td>{{soli.nombre_secretario}}</td>
+                                       <td>{{soli.zona}}</td>
+                                       <td>{{soli.estado}}</td>
+                                
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Vasp de Leche</td>
+                                        <td>Organización Vecinal</td>
+                                        <td>Alameda</td>
+                                        <td>Alameda</td>
+                                        <td>Av. Bernardo Balaguer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Vasp de Leche</td>
+                                        <td>Organización Vecinal</td>
+                                        <td>Alameda</td>
+                                        <td>Alameda</td>
+                                        <td>Av. Bernardo Balaguer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Vasp de Leche</td>
+                                        <td>Organización Vecinal</td>
+                                        <td>Alameda</td>
+                                        <td>Alameda</td>
+                                        <td>Av. Bernardo Balaguer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Vasp de Leche</td>
+                                        <td>Organización Vecinal</td>
+                                        <td>Alameda</td>
+                                        <td>Alameda</td>
+                                        <td>Av. Bernardo Balaguer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Vasp de Leche</td>
+                                        <td>Organización Vecinal</td>
+                                        <td>Alameda</td>
+                                        <td>Alameda</td>
+                                        <td>Av. Bernardo Balaguer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Vasp de Leche</td>
+                                        <td>Organización Vecinal</td>
+                                        <td>Alameda</td>
+                                        <td>Alameda</td>
+                                        <td>Av. Bernardo Balaguer</td>
+                                    </tr>
+
+                                   
+        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+  </div>
+  

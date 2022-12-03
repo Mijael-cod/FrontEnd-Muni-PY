@@ -1,0 +1,13 @@
+.dsc-card {
+    height: 200px;
+    max-width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid rgb(66, 109, 202);
+    
+     
+}
