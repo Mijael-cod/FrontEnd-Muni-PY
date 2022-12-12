@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Solicitudes } from 'app/modelo/Solicitudes';
 import { ServiceService } from 'app/Service/service.service';
-
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-user-profile',
@@ -10,9 +10,20 @@ import { ServiceService } from 'app/Service/service.service';
 })
 export class UserProfileComponent implements OnInit {
 
+  
+
   constructor(private service:ServiceService) { }
 
   ngOnInit() {
+  }
+
+  Guardar2(){
+    Swal.fire(
+      'Se registro con éxito',
+      '',
+      'success'
+    )
+
   }
 
   Guardar(solicitud:Solicitudes){

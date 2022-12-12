@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 declare const $: any;
 declare interface RouteInfo {
     path: string;
@@ -10,25 +11,19 @@ declare interface RouteInfo {
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Principal A.',  icon: 'dashboard', class: '' },
    
-
-
     { path: '/user-profile', title: 'Registrar OS',  icon:'person', class: '' },
     { path: '/table-list', title: 'Actualizar OS',  icon:'content_paste', class: '' },
     { path: '/typography', title: 'Solicitudes',  icon:'library_books', class: '' },
     { path: '/icons', title: 'Registrar Personal',  icon:'bubble_chart', class: '' },
     { path: '/maps', title: 'Listar Usuarios',  icon:'location_on', class: '' },
     { path: '/notifications', title: 'Listar JA',  icon:'notifications', class: '' },
-    { path: '/genexp', title: 'Generar Expediente', icon:'person', class:''},
-    { path: '/verificarexpe', title: 'Expediente', icon:'person', class:''},
-
-   
+    { path: '/genexp', title: 'Generar Expediente', icon:'library_books', class:''},
+    { path: '/verificarexpe', title: 'Verificar Expediente', icon:'library_books', class:''},
+    { path: '/resolucion', title: 'Resoluciones', icon: 'location_on', class:''}
     
 
-
-
-
-    { path: '/upgrade', title: 'Cerrar Sesión',  icon:'unarchive', class: 'active-pro' },
-];
+    
+];  
 
 @Component({
   selector: 'app-sidebar',

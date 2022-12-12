@@ -9,13 +9,14 @@ import { RegistrarComponent } from './registrar/registrar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 
+
 const routes: Routes =[
   {
     path: '',
     component: HomepageComponent
   },
   
-  
+
   {
     path: '',
     component: LoginComponent

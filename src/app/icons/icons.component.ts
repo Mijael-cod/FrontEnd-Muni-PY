@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2'
+
 
 @Component({
   selector: 'app-icons',
@@ -10,6 +12,15 @@ export class IconsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  Guardar2(){
+    Swal.fire(
+      'Se registro con éxito',
+      '',
+      'success'
+    )
+
   }
 
 }

@@ -9,6 +9,7 @@ import { Usuario } from '../models/Usuario.model';
 
 import Swal from 'sweetalert2'
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

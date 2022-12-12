@@ -18,4 +18,5 @@ export class ServiceService {
     return this.http.post<Solicitudes>(this.Url,solicitud);
 
   } 
+  
 }
