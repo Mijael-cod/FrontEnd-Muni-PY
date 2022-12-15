@@ -23,7 +23,7 @@ export class AuthService {
     delete payload.sub;
     delete payload.exp;
     this.usuarioLogged = payload;    
-    sessionStorage.setItem("usuarioLogged", JSON.stringify(this.usuarioLogged))
+    localStorage.setItem("usuarioLogged", JSON.stringify(this.usuarioLogged))
   }
   
 }

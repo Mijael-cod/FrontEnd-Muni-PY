@@ -9,6 +9,7 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { GenexpComponent } from 'app/genexp/genexp.component';
 import { VerificarexpeComponent } from 'app/verificarexpe/verificarexpe.component';
+import { ResolucionComponent } from 'app/resolucion/resolucion.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -63,6 +64,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'genexp', component: GenexpComponent},
     { path: 'verificarexpe', component: VerificarexpeComponent},
+    { path: 'resolucion', component:ResolucionComponent},
    
     
 ];

@@ -7,6 +7,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { LoginComponent } from './login/login.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { Homepage2Component } from './homepage2/homepage2.component';
+import { LoginGuard } from './guards/login.guard';
 
 
 
@@ -16,9 +18,15 @@ const routes: Routes =[
     component: HomepageComponent
   },
   
+  {
+    path: '',
+    component: Homepage2Component
+  },
+
 
   {
     path: '',
+    
     component: LoginComponent
   },
   {
@@ -27,6 +35,7 @@ const routes: Routes =[
   },
   {
     path: 'login',
+    
     component: LoginComponent
   },
   {

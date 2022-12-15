@@ -2,39 +2,20 @@
 
 <header>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <div class="container-fluid" style="background-color: rgba(82, 157, 8, 0.9); color: white;">
-                <a class="navbar-brand" href="#">Municipalidad de Chaclacayo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Modelos</a>
-                        </li>
+        <nav style=" color: white; height: 100px;">
+            <a class="navbar-brand" href="#" style="margin-top: 30px;">Municipalidad de Chaclacayo</a>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tipo os</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Organizaciones Sociales</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <a class="" href="#" style="margin-left: 130px; color: white; margin-top: 300px;">Inicio</a>
+            <a class="" href="#" style="margin-left: 120px; color: white; margin-top: 300px;">Modelos</a>
+            <a class="" href="#" style="margin-left: 100px; color: white; margin-top: 300px;">Tipo os</a>
+            <a class="" href="#" style="margin-left: 80px; color: white; margin-top: 300px;">Organizaciones Vecinales</a>
+        
         </nav>
     </div>
 </header>
 
 <div class="card-body">
-    <img src="assets/img/faces/fondos.jpg" class="card-img-bottom ms-auto" alt="..." height="400">
+    <img src="assets/img/faces/fondos.jpg" class="card-img-bottom ms-auto" alt="..." height="500">
 </div>
 
 
@@ -122,7 +103,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="services-post">
-                                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
                                 <h2>Enviar solicitud</h2>
                             </div>
                         </div>
@@ -429,34 +410,29 @@
                         <th scope="col">#</th>
                         <th scope="col">Codigo de Organización</th>
                         <th scope="col">Nombre de Organización</th>
-                        <th scope="col">Nombre de Organización</th>
                         <th scope="col">Zona</th>
                         <th scope="col">Inicio de vigencia</th>
                         <th scope="col">Fin de vigencia</th>
-                        <th scope="col">Inicio de vigencia</th>
                         <th scope="col">Resolución  de la Organización</th>
                         <th scope="col">Word</th>
                         <th scope="col">PDF</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
+
+                        <tr *ngFor="let repo of repost;">
+                            <td>{{repo.idruos}}</td>
+                            <td>{{repo.codigoos}}</td>
+                            <td>{{repo.nombreos}}</td>
+                            <td>{{repo.zona}}</td>
+                            <td>{{repo.fechainicio}}</td>
+                            <td>{{repo.fechavigencia}}</td>
+                            <td><a href=""><i class="fa-solid fa-file-pdf"></i></a></td>
+                            <td><a href=""><i class="fa-solid fa-file-word"></i></a></td>
+                            <td><a href=""><i class="fa-solid fa-file-pdf"></i></a></td>
+                     
+                         </tr>
+                      
                     </tbody>
                   </table>
                   </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Solicitudes } from 'app/modelo/Solicitudes';
 import { ServiceService } from 'app/Service/service.service';
+import { RequisitoService } from 'app/Service/organizacion.service';
 import { data } from 'jquery';
 
 
@@ -13,13 +14,19 @@ import { data } from 'jquery';
 export class TypographyComponent implements OnInit {
 
   solicitudes:Solicitudes[];
-  constructor( private service: ServiceService) { }
+  
+  repost: any;
+
+  constructor( private service: ServiceService,
+    private organizacion: RequisitoService) { }
+
+  
 
   ngOnInit() {
-    this.service.getSolicitudes()
+    this.organizacion.requisitos()
     .subscribe(data =>{
-      this.solicitudes = data;
-      console.log()
+      this.repost = data;
+      console.log(this.repost)
     })
   }
 

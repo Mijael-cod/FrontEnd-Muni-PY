@@ -51,12 +51,24 @@
             </li>
         </ul>
     </div>
+
     <ul class="nav">
+
+        
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
-            <a class="nav-link" [routerLink]="[menuItem.path]">
-                <i class="material-icons">{{menuItem.icon}}</i>
-                <p>{{menuItem.title}}</p>
-            </a>
+            <ng-container *ngIf="menuItem.roles.includes(usuario.rol)">
+                <a class="nav-link" [routerLink]="[menuItem.path]">
+                    <i class="material-icons">{{menuItem.icon}}</i>
+                    <p>{{menuItem.title}}</p>
+                </a>
+            </ng-container>
+            
         </li>
+
+
+        
+
+
     </ul>
+    
 </div>
