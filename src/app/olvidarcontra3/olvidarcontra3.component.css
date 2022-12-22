@@ -1,0 +1,14 @@
+.gradient-custom {
+    
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 310px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://contigotv.pe/wp-content/uploads/2021/04/Chaclacayo-Lima-10.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+    }

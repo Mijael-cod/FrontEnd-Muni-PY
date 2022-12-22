@@ -10,6 +10,13 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { GenexpComponent } from 'app/genexp/genexp.component';
 import { VerificarexpeComponent } from 'app/verificarexpe/verificarexpe.component';
 import { ResolucionComponent } from 'app/resolucion/resolucion.component';
+import { CredencialesComponent } from 'app/credenciales/credenciales.component';
+import { CertificadoComponent } from 'app/certificado/certificado.component';
+import { PrincipalmpComponent } from 'app/principalmp/principalmp.component';
+import { PrincipalsgComponent } from 'app/principalsg/principalsg.component';
+import { PrincipalgrComponent } from 'app/principalgr/principalgr.component';
+import { PrincipalgereComponent } from 'app/principalgere/principalgere.component';
+import { ParametrosComponent } from 'app/parametros/parametros.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -65,6 +72,11 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'genexp', component: GenexpComponent},
     { path: 'verificarexpe', component: VerificarexpeComponent},
     { path: 'resolucion', component:ResolucionComponent},
-   
-    
+    { path: 'credenciales', component: CredencialesComponent},
+    { path: 'certificado', component: CertificadoComponent},
+    { path: 'principalmp', component: PrincipalmpComponent},
+    { path: 'principalsg', component: PrincipalsgComponent},
+    { path: 'principalgr', component: PrincipalgrComponent},
+    { path: 'principalgere', component: PrincipalgereComponent},
+    { path: 'parametros', component: ParametrosComponent},
 ];

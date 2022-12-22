@@ -62,7 +62,46 @@
                     <p>{{menuItem.title}}</p>
                 </a>
             </ng-container>
-            
+        </li>
+        <br>
+        <li class="nav-item" *ngIf="usuario.rol == 'ADMIN_ROLE'">
+            <a routerLink="login" routerLinkActive="active-link" class="group_items">
+                <i class="fa-solid fa-x"></i>
+                <span>Cerrar Sesión</span>
+            </a>
+            <hr class="hr_divide">
+        </li>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <li class="nav-item" *ngIf="usuario.rol == 'USER_ROLE'">
+            <a routerLink="login" routerLinkActive="active-link" class="group_items">
+                <i class="fa-solid fa-x"></i>
+                <span>Cerrar Sesión</span>
+            </a>
+            <hr class="hr_divide">
+        </li>
+        <br><br><br><br><br>
+        <li class="nav-item" *ngIf="usuario.rol == 'MESAPARTES_ROLE'">
+            <a routerLink="login" routerLinkActive="active-link" class="group_items">
+                <i class="fa-solid fa-x"></i>
+                <span>Cerrar Sesión</span>
+            </a>
+            <hr class="hr_divide">
+        </li>
+
+        <li class="nav-item" *ngIf="usuario.rol == 'GERENCIA_ROLE'">
+            <a routerLink="login" routerLinkActive="active-link" class="group_items">
+                <i class="fa-solid fa-x"></i>
+                <span>Cerrar Sesión</span>
+            </a>
+            <hr class="hr_divide">
+        </li>
+
+        <li class="nav-item" *ngIf="usuario.rol == 'SUBGERENCIA_ROLE'" style="margin-top: -120px;">
+            <a routerLink="login" routerLinkActive="active-link" class="group_items">
+                <i class="fa-solid fa-x"></i>
+                <span>Cerrar Sesión</span>
+            </a>
+            <hr class="hr_divide">
         </li>
 
 

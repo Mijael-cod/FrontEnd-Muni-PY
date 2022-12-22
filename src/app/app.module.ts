@@ -11,6 +11,10 @@ import { ServiceService } from 'app/Service/service.service';
 import { LoginComponent } from './login/login.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { OlvidarcontraComponent } from './olvidarcontra/olvidarcontra.component';
+import { Olvidarcontra2Component } from './olvidarcontra2/olvidarcontra2.component';
+import { Olvidarcontra3Component } from './olvidarcontra3/olvidarcontra3.component';
+import { Olvidarcontra4Component } from './olvidarcontra4/olvidarcontra4.component';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import { HomepageComponent } from './homepage/homepage.component';
     AdminLayoutComponent,
     LoginComponent,
     RegistrarComponent,
-    HomepageComponent
+    HomepageComponent,
+    OlvidarcontraComponent,
+    Olvidarcontra2Component,
+    Olvidarcontra3Component,
+    Olvidarcontra4Component
 
   ],
   providers: [ServiceService],

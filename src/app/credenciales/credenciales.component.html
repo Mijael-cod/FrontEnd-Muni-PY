@@ -1,0 +1,115 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-success">
+                        <h4 class="card-title ">Lista de Solicitudes</h4>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <thead class=" text-primary">
+                                    <th>
+                                        Nro Expediente
+                                    </th>
+                                    <th>
+                                        Nombre OS
+                                    </th>
+                                    <th>
+                                        Tipo de Organización Social
+                                    </th>
+                                    <th>
+                                        Codigo OS
+                                    </th>
+                                    <th>
+                                        Zona Local    
+                                    </th>
+                                    <th>
+                                        Resolución
+                                    </th>
+                                    <th>
+                                        Certificado
+                                    </th>
+                                    <th>
+                                        Credenciales
+                                    </th>
+                                   
+                                </thead>
+
+                                <tbody>
+
+                                    <tr *ngFor="let repo of repost;">
+                                       <td>{{repo.idorganizacion}}</td>
+                                       <td>{{repo.organizacion}}</td>
+                                       <td>{{repo.tipoos}}</td>
+                                       <td>{{repo.zonalocal}}</td>
+                                       <td>{{repo.nivelos}}</td>
+                                       <td>{{repo.direccion}}</td>
+                                
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td>Vaso de Leche</td>
+                                        <td>Organizaciones Vecinales</td>
+                                        <td>20211075</td>
+                                        <td>Alameda</td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-file-pdf"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td>Vaso de Leche</td>
+                                        <td>Organizaciones Vecinales</td>
+                                        <td>20211075</td>
+                                        <td>Alameda</td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-file-pdf"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td>Vaso de Leche</td>
+                                        <td>Organizaciones Vecinales</td>
+                                        <td>20211075</td>
+                                        <td>Alameda</td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-file-pdf"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td>Vaso de Leche</td>
+                                        <td>Organizaciones Vecinales</td>
+                                        <td>20211075</td>
+                                        <td>Alameda</td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-file-pdf"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td>Vaso de Leche</td>
+                                        <td>Organizaciones Vecinales</td>
+                                        <td>20211075</td>
+                                        <td>Alameda</td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="https://cdn-v1.udocz-assets.com/uploads/book/cover/61872/anexo_b_solicitud_de_inscripcion_en_el_registro_juridico.jpg" class="text-center"><i class="fa-solid fa-file-pdf"></i></a></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+  </div>
+  
